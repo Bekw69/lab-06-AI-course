@@ -1,0 +1,52 @@
+{
+  "harness_controls": [
+    "validate_input",
+    "blind",
+    "refuse",
+    "log",
+    "escalate"
+  ],
+  "format_problems": [],
+  "entries": [
+    {
+      "control": "validate_input",
+      "principle": "Robustness, security and safety",
+      "principle_source": "OECD/LEGAL/0449 (2019, amended 2024), Section 1.4(a),(c); https://legalinstruments.oecd.org/public/doc/648/648.en.pdf",
+      "instrument": "Republic of Kazakhstan Law No. 230-VIII of 17 November 2025, On Artificial Intelligence",
+      "provision": "Articles 11(1),(3) and 15(2)(1)-(2); https://old.adilet.zan.kz/eng/docs/Z2500000230",
+      "why_here": "The clean-pair baseline tests no malformed numeric input; this prospective risk control blocks impossible data in the separate refusal exercise, and its exact ranges are prototype choices rather than statutory ranges."
+    },
+    {
+      "control": "blind",
+      "principle": "Fairness and privacy",
+      "principle_source": "OECD/LEGAL/0449 (2019, amended 2024), Section 1.2(a); https://legalinstruments.oecd.org/public/doc/648/648.en.pdf",
+      "instrument": "Republic of Kazakhstan Law No. 230-VIII of 17 November 2025, On Artificial Intelligence; Law No. 94-V of 21 May 2013, On Personal Data and their Protection",
+      "provision": "AI Law Article 6; Personal Data Law Article 7(8)-(9); https://old.adilet.zan.kz/eng/docs/Z2500000230 ; https://old.adilet.zan.kz/eng/docs/Z1300000094",
+      "why_here": "name_language: 2/40 flips; gender_coded_name: 4/40 flips; university: 1/40 flips; null_name: 0/40 flips; null_university: 1/40 flips; withholding name and university is a prospective relevance constraint, with after-pair equality understood as construction rather than proof of debiasing."
+    },
+    {
+      "control": "refuse",
+      "principle": "Human agency, privacy and protection against misuse",
+      "principle_source": "OECD/LEGAL/0449 (2019, amended 2024), Sections 1.2(a)-(b),1.4(a); https://legalinstruments.oecd.org/public/doc/648/648.en.pdf",
+      "instrument": "Republic of Kazakhstan Law No. 94-V of 21 May 2013, On Personal Data and their Protection; Law No. 230-VIII of 17 November 2025, On Artificial Intelligence",
+      "provision": "Personal Data Law Articles 7(1),(8),19-1(1); AI Law Article 15(1)(1); https://old.adilet.zan.kz/eng/docs/Z1300000094 ; https://old.adilet.zan.kz/eng/docs/Z2500000230",
+      "why_here": "All measured pairs are clean, so separately exercise wrong purpose, missing consent, adult-only policy and injected text; adult-only scope and regex are design choices, and the Boolean is not evidence of legally sufficient consent."
+    },
+    {
+      "control": "log",
+      "principle": "Accountability and traceability",
+      "principle_source": "OECD/LEGAL/0449 (2019, amended 2024), Section 1.5(a)-(c); https://legalinstruments.oecd.org/public/doc/648/648.en.pdf",
+      "instrument": "Republic of Kazakhstan Law No. 230-VIII of 17 November 2025, On Artificial Intelligence",
+      "provision": "Articles 8(1)-(2),15(2)(3); https://old.adilet.zan.kz/eng/docs/Z2500000230",
+      "why_here": "Pair counts alone cannot reconstruct an applicant-level outcome, so retain raw reply, shown-field hash, configuration and routing reason for every main-run call; plain JSONL is not tamper-proof and does not establish full documentary compliance."
+    },
+    {
+      "control": "escalate",
+      "principle": "Human agency, oversight and contestability",
+      "principle_source": "OECD/LEGAL/0449 (2019, amended 2024), Sections 1.2(b),1.3(iv); https://legalinstruments.oecd.org/public/doc/648/648.en.pdf",
+      "instrument": "Republic of Kazakhstan Law No. 94-V of 21 May 2013, On Personal Data and their Protection; Digital Code No. 255-VIII of 9 January 2026",
+      "provision": "Personal Data Law Article 19-1(2)-(3); Digital Code Article 43(4)(3), subject to its conditions; https://old.adilet.zan.kz/eng/docs/Z1300000094 ; https://old.adilet.zan.kz/eng/docs/K2600000255",
+      "why_here": "Baseline score distribution informs a workload band that is recalibrated on a separate blinded pilot; add unparseable and highest-need rejection review, without claiming a score band implements the entire legal notice/objection/review process."
+    }
+  ]
+}

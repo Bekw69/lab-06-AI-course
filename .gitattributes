@@ -1,0 +1,3 @@
+decisions.jsonl text eol=lf
+review_queue.jsonl text eol=lf
+control_register.json text eol=lf

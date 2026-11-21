@@ -1,0 +1,8 @@
+{
+  "purpose": "Exact SHA-256 of the three files exported from Colab; checksum comparison only, not a signature or tamper-proof storage",
+  "sha256": {
+    "decisions.jsonl": "48f2445d5d148a07c94a348b84390c8e88f37d73b3a52a7973b64ac1f3b7aa7b",
+    "control_register.json": "27d37c047f3a8c5e75e7d29a53eb6677fdde93654ee1eeae63694a7f52119ec1",
+    "review_queue.jsonl": "c9ad063b788303f50feb4d9ab67bffc6d78df09181a72027f11a12828e902f17"
+  }
+}
